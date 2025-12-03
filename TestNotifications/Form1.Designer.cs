@@ -29,33 +29,34 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            NotificationButton = new System.Windows.Forms.Button();
             toastNotificationsManager1 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(components);
-            button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)toastNotificationsManager1).BeginInit();
             SuspendLayout();
             // 
+            // NotificationButton
+            // 
+            NotificationButton.Location = new System.Drawing.Point(233, -17);
+            NotificationButton.Margin = new System.Windows.Forms.Padding(4);
+            NotificationButton.Name = "NotificationButton";
+            NotificationButton.Size = new System.Drawing.Size(246, 174);
+            NotificationButton.TabIndex = 0;
+            NotificationButton.Text = "Notify with DevExpress";
+            NotificationButton.UseVisualStyleBackColor = true;
+            NotificationButton.Click += NotificationButton_Click;
+            // 
             // toastNotificationsManager1
             // 
-            toastNotificationsManager1.ApplicationId = "5a52ec02-f13e-4658-8f69-046dff162e28";
-            toastNotificationsManager1.Notifications.AddRange(new DevExpress.XtraBars.ToastNotifications.IToastNotificationProperties[] { new DevExpress.XtraBars.ToastNotifications.ToastNotification("1a563ef4-a6c7-4eb1-bc1f-05275dc13425", (System.Drawing.Image)resources.GetObject("toastNotificationsManager1.Notifications"), "UNODUETRE", "OKOK", "KKK", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.Text01) });
-            // 
-            // button1
-            // 
-            button1.Location = new System.Drawing.Point(200, -14);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(211, 141);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            toastNotificationsManager1.ApplicationId = "ac4d629f-6a13-4f28-92c3-36f99d7237fd";
+            toastNotificationsManager1.Notifications.AddRange(new DevExpress.XtraBars.ToastNotifications.IToastNotificationProperties[] { new DevExpress.XtraBars.ToastNotifications.ToastNotification("f0d5acc9-b600-4769-9f2a-751f76d28e3b", null, "Pellentesque lacinia tellus eget volutpat", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.Text01) });
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(570, 193);
-            Controls.Add(button1);
+            ClientSize = new System.Drawing.Size(665, 238);
+            Controls.Add(NotificationButton);
+            Margin = new System.Windows.Forms.Padding(4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -65,9 +66,8 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Button NotificationButton;
         private DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager toastNotificationsManager1;
-        private System.Windows.Forms.Button button1;
     }
 }
 

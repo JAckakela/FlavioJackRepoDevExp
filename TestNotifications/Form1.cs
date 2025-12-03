@@ -13,7 +13,15 @@ namespace TestNotifications
         public Form1()
         {
             InitializeComponent();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NotificationButton_Click(object sender, EventArgs e)
+        {
             var manager = new ToastNotificationsManager();
             manager.ApplicationId = "TestApplicativo"; // Unique ID
 
@@ -26,21 +34,11 @@ namespace TestNotifications
             manager.Notifications.Add(note);
 
             // Display the notification.
-            manager.ShowNotification(note.ID);
+            //manager.ShowNotification(note.ID);
 
 
             toastNotificationsManager1.ShowNotification(toastNotificationsManager1.Notifications[0]);
-            toastNotificationsManager1.ShowNotification("3b7fcd8b-a1e0-4ff5-83ce-023cdf6be24b");
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            toastNotificationsManager1.ShowNotification("61324b1b-2b77-46df-a800-cbe78ec405df");
 
         }
     }
