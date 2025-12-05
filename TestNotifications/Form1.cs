@@ -22,6 +22,7 @@ namespace TestNotifications
 
         private void NotificationButton_Click(object sender, EventArgs e)
         {
+            /*
             var manager = new ToastNotificationsManager();
             manager.ApplicationId = "TestApplicativo"; // Unique ID
 
@@ -35,10 +36,15 @@ namespace TestNotifications
 
             // Display the notification.
             //manager.ShowNotification(note.ID);
+            */
 
 
-            toastNotificationsManager1.ShowNotification(toastNotificationsManager1.Notifications[0]);
-            toastNotificationsManager1.ShowNotification("61324b1b-2b77-46df-a800-cbe78ec405df");
+            //toastNotificationsManager1.ShowNotification(toastNotificationsManager1.Notifications[0]);
+            //toastNotificationsManager1.ShowNotification("61324b1b-2b77-46df-a800-cbe78ec405df");
+
+
+            WindowsNotificationHelper.ShowToast();
+            //toastNotificationsManager1.ShowNotification(toastNotificationsManager1.Notifications[0]);
 
         }
     }

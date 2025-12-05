@@ -48,7 +48,7 @@
             // toastNotificationsManager1
             // 
             toastNotificationsManager1.ApplicationId = "ac4d629f-6a13-4f28-92c3-36f99d7237fd";
-            toastNotificationsManager1.Notifications.AddRange(new DevExpress.XtraBars.ToastNotifications.IToastNotificationProperties[] { new DevExpress.XtraBars.ToastNotifications.ToastNotification("f0d5acc9-b600-4769-9f2a-751f76d28e3b", null, "Pellentesque lacinia tellus eget volutpat", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.Text01) });
+            toastNotificationsManager1.Notifications.AddRange(new DevExpress.XtraBars.ToastNotifications.IToastNotificationProperties[] { new DevExpress.XtraBars.ToastNotifications.ToastNotification("f0d5acc9-b600-4769-9f2a-751f76d28e3b", null, "Header", "Body1", "Body2", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.Text04) });
             // 
             // Form1
             // 
